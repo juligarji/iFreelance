@@ -6,7 +6,7 @@ class CreateJobLogs < ActiveRecord::Migration[5.1]
 
       t.timestamps
     end
-
+    
     add_reference :job_logs, :job, index: true
     add_foreign_key  :job_logs, :jobs
 
